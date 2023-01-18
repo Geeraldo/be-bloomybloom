@@ -1,12 +1,23 @@
 "use strict";
 
 const fs = require("fs");
+const dotenv = require("dotenv");
 const path = require("path");
 const Sequelize = require("sequelize");
+const postgres = require("postgres");
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || "production";
 const config = require(__dirname + "/../config/config.json")[env];
 const db = {};
+
+dotenv.config()
+
+
+const { PGHOST, PGDATABASE, PGUSER, PGPASSWORD, ENDPOINT_ID } = process.env;
+const URL = `postgres://${PGUSER}:${PGPASSWORD}@${PGHOST}/${PGDATABASE}?options=project%3D${ENDPOINT_ID}`;
+const sql = postgres(URL, { ssl: 'require' });
+console.log(sql);
+
 
 let sequelize;
 if (config.use_env_variable) {

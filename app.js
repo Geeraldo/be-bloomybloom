@@ -4,6 +4,7 @@ const routes = require('./routes');
 const errorHandler = require('./middlewares/errorHandler');
 const port = 3000 | process.env.PORT
 const cors = require('cors')
+const postgres = require('postgres');
 
 app.use(cors())
 app.use(express.urlencoded({extended: true}));
