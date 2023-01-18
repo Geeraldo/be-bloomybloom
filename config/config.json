@@ -14,10 +14,10 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres",
-    "password": "123",
+    "username": "wvsfozth",
+    "password": "1KKoZ4gMgTanKKy2C23E_OKHK2YmSPZ7J23",
     "database": "database_production",
-    "host": "localhost",
+    "host": "locapostgres://wvsfozth:KKoZ4gMgTanKKy2C23E_OKHK2YmSPZ7J@satao.db.elephantsql.com/wvsfozthlhost",
     "dialect": "postgres"
   }
 }
