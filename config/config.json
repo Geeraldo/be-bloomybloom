@@ -19,7 +19,8 @@
     "database": "database_development",
     "host": "ep-restless-recipe-101030.ap-southeast-1.aws.neon.tech",
     "dialect": "postgres",
-    "connectionString": "postgres://Geeraldo@ep-restless-recipe-101030.ap-southeast-1.aws.neon.tech/database_development",
-    "ssl": "require"
+    "dialectOptions": {
+      "ssl": {}
   }
+}
 }
