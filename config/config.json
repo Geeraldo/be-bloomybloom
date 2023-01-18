@@ -14,10 +14,17 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "wvsfozth",
-    "password": "1KKoZ4gMgTanKKy2C23E_OKHK2YmSPZ7J23",
-    "database": "database_production",
-    "host": "locapostgres://wvsfozth:KKoZ4gMgTanKKy2C23E_OKHK2YmSPZ7J@satao.db.elephantsql.com/wvsfozthlhost",
-    "dialect": "postgres"
+    "username": "Geeraldo",
+    "password": "pelnfDrC7HO6",
+    "database": "database_development",
+    "host": "ep-restless-recipe-101030.ap-southeast-1.aws.neon.tech",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "key": "cKey",
+        "cert": "cCert",
+        "ca": "cCA"
+      }
   }
+}
 }
